@@ -1,0 +1,84 @@
+//Question 1//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myElement">
+  <p>Welcome to my website!</p>
+</div>
+
+<script>
+    document.getElementById("myElement").innerHTML = "Hello there!";
+  </script>
+
+<p>The paragraph above was changed by a script.</p>
+
+</body>
+</html>
+
+//Question 2//
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <body>
+        <input type="text" id="userInput" placeholder="Enter a number">
+        <button onclick="checkInput()">Check</button>
+
+        <script>
+          function checkInput() {
+            let value = document.getElementById("userInput").value;
+
+            if(isNaN(value)) {
+              alert("please insert a number");
+            }
+
+            else if(Number(value)<10) {
+                aler("The number is lower than 10");
+            }
+
+            else {
+              aler("The number is higher than 10");
+            }
+          }
+        </script>
+    </body>
+  </head>
+</html>
+
+
+
+//Question 3//
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+          let text="";
+
+          for (let i=0;i<=5;i++) {
+            text += "the number is" + i + "<br>";
+          }
+
+          document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+  </head>
+</html>
+
+
+
+
